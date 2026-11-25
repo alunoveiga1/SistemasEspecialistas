@@ -38,6 +38,6 @@ Este sistema tem caráter estritamente acadêmico e informativo, oferecendo uma 
 
 ---
 
-## 👤 Autor
+##  Autor
 
 Desenvolvido por: Artelio Nobre Pereira, Carlos Henrique Pereira Santos e Lucas Henrique Saldanha Santos  como projeto acadêmico.
