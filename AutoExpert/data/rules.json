@@ -1,0 +1,538 @@
+[
+  {
+    "id": "R01",
+    "nome": "Bateria descarregada",
+    "categoria": "Partida e bateria",
+    "condicoes": [
+      "nao_liga",
+      "motor_nao_gira",
+      "bateria_fraca"
+    ],
+    "conclusao": "bateria_descarregada",
+    "tipo": "diagnostico",
+    "confianca": 0.94,
+    "urgencia": "Alta",
+    "recomendacao": "Testar bateria e sistema de carga.",
+    "explicacao": "Os sintomas indicam bateria descarregada."
+  },
+  {
+    "id": "R02",
+    "nome": "Problema no motor de partida",
+    "categoria": "Partida e bateria",
+    "condicoes": [
+      "nao_liga",
+      "motor_nao_gira",
+      "clique_partida"
+    ],
+    "conclusao": "motor_partida",
+    "tipo": "diagnostico",
+    "confianca": 0.9,
+    "urgencia": "Alta",
+    "recomendacao": "Verificar motor de partida, cabos e relé.",
+    "explicacao": "Clique com motor sem girar pode indicar falha no conjunto de partida."
+  },
+  {
+    "id": "R03",
+    "nome": "Falha do alternador",
+    "categoria": "Partida e bateria",
+    "condicoes": [
+      "luz_bateria",
+      "correia_alternador"
+    ],
+    "conclusao": "falha_alternador",
+    "tipo": "diagnostico",
+    "confianca": 0.93,
+    "urgencia": "Alta",
+    "recomendacao": "Inspecionar correia e tensão de carga.",
+    "explicacao": "Luz da bateria e problema na correia sugerem falha de carga."
+  },
+  {
+    "id": "R04",
+    "nome": "Carga insuficiente do alternador",
+    "categoria": "Partida e bateria",
+    "condicoes": [
+      "luz_bateria",
+      "farol_fraco"
+    ],
+    "conclusao": "falha_alternador",
+    "tipo": "diagnostico",
+    "confianca": 0.88,
+    "urgencia": "Alta",
+    "recomendacao": "Testar alternador e sistema elétrico.",
+    "explicacao": "Luz da bateria e faróis fracos sugerem carga insuficiente."
+  },
+  {
+    "id": "R05",
+    "nome": "Bateria com baixa carga",
+    "categoria": "Partida e bateria",
+    "condicoes": [
+      "farol_fraco",
+      "bateria_fraca"
+    ],
+    "conclusao": "bateria_descarregada",
+    "tipo": "diagnostico",
+    "confianca": 0.86,
+    "urgencia": "Média",
+    "recomendacao": "Testar tensão e capacidade da bateria.",
+    "explicacao": "Faróis fracos e bateria fraca reforçam baixa carga."
+  },
+  {
+    "id": "R06",
+    "nome": "Falha de injeção",
+    "categoria": "Motor e injeção",
+    "condicoes": [
+      "falha_motor",
+      "luz_injecao"
+    ],
+    "conclusao": "falha_injecao",
+    "tipo": "diagnostico",
+    "confianca": 0.91,
+    "urgencia": "Média",
+    "recomendacao": "Realizar diagnóstico eletrônico.",
+    "explicacao": "Falhas do motor com luz de injeção indicam investigação eletrônica."
+  },
+  {
+    "id": "R07",
+    "nome": "Falha de injeção com perda de potência",
+    "categoria": "Motor e injeção",
+    "condicoes": [
+      "falha_motor",
+      "perda_potencia",
+      "luz_injecao"
+    ],
+    "conclusao": "falha_injecao",
+    "tipo": "diagnostico",
+    "confianca": 0.95,
+    "urgencia": "Alta",
+    "recomendacao": "Evitar uso prolongado e realizar diagnóstico.",
+    "explicacao": "Os três sintomas formam forte evidência de falha no gerenciamento do motor."
+  },
+  {
+    "id": "R08",
+    "nome": "Mistura rica",
+    "categoria": "Motor e injeção",
+    "condicoes": [
+      "consumo_alto",
+      "fumaca_preta"
+    ],
+    "conclusao": "mistura_rica",
+    "tipo": "diagnostico",
+    "confianca": 0.89,
+    "urgencia": "Média",
+    "recomendacao": "Verificar injetores, sensores e filtro de ar.",
+    "explicacao": "Consumo elevado e fumaça preta são compatíveis com excesso de combustível."
+  },
+  {
+    "id": "R09",
+    "nome": "Queima de óleo",
+    "categoria": "Motor e injeção",
+    "condicoes": [
+      "fumaca_azul",
+      "nivel_oleo_baixo"
+    ],
+    "conclusao": "queima_oleo",
+    "tipo": "diagnostico",
+    "confianca": 0.92,
+    "urgencia": "Alta",
+    "recomendacao": "Verificar compressão e consumo de óleo.",
+    "explicacao": "Fumaça azul e óleo baixo sugerem queima de óleo."
+  },
+  {
+    "id": "R10",
+    "nome": "Problema de partida",
+    "categoria": "Motor e injeção",
+    "condicoes": [
+      "dificuldade_partida",
+      "marcha_lenta_irregular"
+    ],
+    "conclusao": "partida_dificil",
+    "tipo": "diagnostico",
+    "confianca": 0.83,
+    "urgencia": "Média",
+    "recomendacao": "Verificar ignição e alimentação.",
+    "explicacao": "Dificuldade de partida e marcha lenta irregular exigem investigação."
+  },
+  {
+    "id": "R11",
+    "nome": "Gerenciamento do motor",
+    "categoria": "Motor e injeção",
+    "condicoes": [
+      "perda_potencia",
+      "luz_injecao"
+    ],
+    "conclusao": "falha_injecao",
+    "tipo": "diagnostico",
+    "confianca": 0.87,
+    "urgencia": "Média",
+    "recomendacao": "Ler códigos de falha e parâmetros.",
+    "explicacao": "Perda de potência com luz de injeção justifica diagnóstico."
+  },
+  {
+    "id": "R12",
+    "nome": "Superaquecimento",
+    "categoria": "Arrefecimento",
+    "condicoes": [
+      "temperatura_alta",
+      "superaquecimento"
+    ],
+    "conclusao": "superaquecimento",
+    "tipo": "diagnostico",
+    "confianca": 0.98,
+    "urgencia": "Crítica",
+    "recomendacao": "Parar o veículo e aguardar avaliação.",
+    "explicacao": "Temperatura elevada e superaquecimento são condição de alta prioridade."
+  },
+  {
+    "id": "R13",
+    "nome": "Baixo nível de arrefecimento",
+    "categoria": "Arrefecimento",
+    "condicoes": [
+      "temperatura_alta",
+      "nivel_arrefecimento_baixo"
+    ],
+    "conclusao": "baixo_arrefecimento",
+    "tipo": "diagnostico",
+    "confianca": 0.93,
+    "urgencia": "Alta",
+    "recomendacao": "Verificar vazamentos e fluido após o motor esfriar.",
+    "explicacao": "Temperatura alta com nível baixo sugere deficiência no arrefecimento."
+  },
+  {
+    "id": "R14",
+    "nome": "Vazamento de arrefecimento",
+    "categoria": "Arrefecimento",
+    "condicoes": [
+      "vazamento_liquido",
+      "nivel_arrefecimento_baixo"
+    ],
+    "conclusao": "vazamento_arrefecimento",
+    "tipo": "diagnostico",
+    "confianca": 0.96,
+    "urgencia": "Alta",
+    "recomendacao": "Localizar e reparar o vazamento.",
+    "explicacao": "Vazamento e nível baixo indicam perda de fluido."
+  },
+  {
+    "id": "R15",
+    "nome": "Falha da ventoinha",
+    "categoria": "Arrefecimento",
+    "condicoes": [
+      "temperatura_alta",
+      "ventoinha_nao_aciona"
+    ],
+    "conclusao": "falha_ventoinha",
+    "tipo": "diagnostico",
+    "confianca": 0.94,
+    "urgencia": "Alta",
+    "recomendacao": "Testar ventoinha, fusível, relé e sensor.",
+    "explicacao": "Temperatura alta com ventoinha inoperante sugere falha."
+  },
+  {
+    "id": "R16",
+    "nome": "Falha hidráulica nos freios",
+    "categoria": "Freios",
+    "condicoes": [
+      "freio_baixo",
+      "luz_freio"
+    ],
+    "conclusao": "falha_freio_hidraulico",
+    "tipo": "diagnostico",
+    "confianca": 0.97,
+    "urgencia": "Crítica",
+    "recomendacao": "Não utilizar o veículo sem inspeção dos freios.",
+    "explicacao": "Pedal baixo e luz de advertência podem representar perda de frenagem."
+  },
+  {
+    "id": "R17",
+    "nome": "Desgaste de freios",
+    "categoria": "Freios",
+    "condicoes": [
+      "freio_ruido",
+      "vibracao_frenagem"
+    ],
+    "conclusao": "desgaste_freios",
+    "tipo": "diagnostico",
+    "confianca": 0.91,
+    "urgencia": "Alta",
+    "recomendacao": "Inspecionar pastilhas e discos.",
+    "explicacao": "Ruído e vibração são compatíveis com desgaste."
+  },
+  {
+    "id": "R18",
+    "nome": "Frenagem irregular",
+    "categoria": "Freios",
+    "condicoes": [
+      "carro_puxa_freio",
+      "vibracao_frenagem"
+    ],
+    "conclusao": "frenagem_irregular",
+    "tipo": "diagnostico",
+    "confianca": 0.89,
+    "urgencia": "Alta",
+    "recomendacao": "Verificar pinças, discos, pneus e frenagem.",
+    "explicacao": "Puxar e vibrar ao frear indica comportamento irregular."
+  },
+  {
+    "id": "R19",
+    "nome": "Advertência de freio",
+    "categoria": "Freios",
+    "condicoes": [
+      "luz_freio"
+    ],
+    "conclusao": "inspecao_freios",
+    "tipo": "diagnostico",
+    "confianca": 0.82,
+    "urgencia": "Alta",
+    "recomendacao": "Inspecionar sistema e nível do fluido.",
+    "explicacao": "A luz de advertência exige verificação."
+  },
+  {
+    "id": "R20",
+    "nome": "Desalinhamento",
+    "categoria": "Suspensão, pneus e direção",
+    "condicoes": [
+      "carro_puxa_direcao",
+      "volante_torto"
+    ],
+    "conclusao": "desalinhamento",
+    "tipo": "diagnostico",
+    "confianca": 0.95,
+    "urgencia": "Média",
+    "recomendacao": "Realizar alinhamento.",
+    "explicacao": "Puxar e volante fora de posição são sintomas típicos."
+  },
+  {
+    "id": "R21",
+    "nome": "Desgaste irregular de pneus",
+    "categoria": "Suspensão, pneus e direção",
+    "condicoes": [
+      "pneu_desgaste_irregular",
+      "volante_torto"
+    ],
+    "conclusao": "desgaste_pneus",
+    "tipo": "diagnostico",
+    "confianca": 0.88,
+    "urgencia": "Média",
+    "recomendacao": "Avaliar alinhamento, balanceamento e suspensão.",
+    "explicacao": "Desgaste irregular com volante torto sugere geometria inadequada."
+  },
+  {
+    "id": "R22",
+    "nome": "Desbalanceamento",
+    "categoria": "Suspensão, pneus e direção",
+    "condicoes": [
+      "vibracao_velocidade",
+      "pneu_desgaste_irregular"
+    ],
+    "conclusao": "desbalanceamento",
+    "tipo": "diagnostico",
+    "confianca": 0.9,
+    "urgencia": "Média",
+    "recomendacao": "Realizar balanceamento.",
+    "explicacao": "Vibração em velocidade pode indicar desbalanceamento."
+  },
+  {
+    "id": "R23",
+    "nome": "Falha da suspensão",
+    "categoria": "Suspensão, pneus e direção",
+    "condicoes": [
+      "batida_suspensao",
+      "vibracao_velocidade"
+    ],
+    "conclusao": "falha_suspensao",
+    "tipo": "diagnostico",
+    "confianca": 0.92,
+    "urgencia": "Alta",
+    "recomendacao": "Inspecionar amortecedores e buchas.",
+    "explicacao": "Batidas e vibrações podem indicar desgaste."
+  },
+  {
+    "id": "R24",
+    "nome": "Falha da direção",
+    "categoria": "Suspensão, pneus e direção",
+    "condicoes": [
+      "direcao_pesada",
+      "carro_puxa_direcao"
+    ],
+    "conclusao": "falha_direcao",
+    "tipo": "diagnostico",
+    "confianca": 0.9,
+    "urgencia": "Alta",
+    "recomendacao": "Inspecionar direção e assistência.",
+    "explicacao": "Direção pesada e tendência de puxar exigem inspeção."
+  },
+  {
+    "id": "R25",
+    "nome": "Baixa pressão de óleo",
+    "categoria": "Óleo e manutenção",
+    "condicoes": [
+      "luz_oleo",
+      "nivel_oleo_baixo"
+    ],
+    "conclusao": "baixa_pressao_oleo",
+    "tipo": "diagnostico",
+    "confianca": 0.98,
+    "urgencia": "Crítica",
+    "recomendacao": "Desligar o motor e verificar óleo e pressão.",
+    "explicacao": "Luz de óleo e nível baixo podem causar dano grave."
+  },
+  {
+    "id": "R26",
+    "nome": "Vazamento de óleo",
+    "categoria": "Óleo e manutenção",
+    "condicoes": [
+      "vazamento_oleo",
+      "nivel_oleo_baixo"
+    ],
+    "conclusao": "vazamento_oleo",
+    "tipo": "diagnostico",
+    "confianca": 0.96,
+    "urgencia": "Alta",
+    "recomendacao": "Localizar e reparar vazamento.",
+    "explicacao": "Vazamento e nível baixo indicam perda de óleo."
+  },
+  {
+    "id": "R27",
+    "nome": "Possível vazamento de combustível",
+    "categoria": "Óleo e manutenção",
+    "condicoes": [
+      "cheiro_combustivel",
+      "nao_liga"
+    ],
+    "conclusao": "vazamento_combustivel",
+    "tipo": "diagnostico",
+    "confianca": 0.94,
+    "urgencia": "Crítica",
+    "recomendacao": "Não ligar o veículo e realizar inspeção.",
+    "explicacao": "Cheiro forte de combustível com falha de partida exige cautela."
+  },
+  {
+    "id": "R28",
+    "nome": "Manutenção atrasada",
+    "categoria": "Óleo e manutenção",
+    "condicoes": [
+      "revisao_atrasada",
+      "nivel_oleo_baixo"
+    ],
+    "conclusao": "manutencao_atrasada",
+    "tipo": "diagnostico",
+    "confianca": 0.85,
+    "urgencia": "Média",
+    "recomendacao": "Agendar revisão completa.",
+    "explicacao": "Revisão atrasada e óleo baixo indicam manutenção necessária."
+  },
+  {
+    "id": "R29",
+    "nome": "Ar-condicionado com baixa eficiência",
+    "categoria": "Conforto",
+    "condicoes": [
+      "ar_condicionado_fraco"
+    ],
+    "conclusao": "falha_ar_condicionado",
+    "tipo": "diagnostico",
+    "confianca": 0.82,
+    "urgencia": "Baixa",
+    "recomendacao": "Verificar refrigerante, compressor e filtros.",
+    "explicacao": "Baixa eficiência exige avaliação do circuito."
+  },
+  {
+    "id": "R30",
+    "nome": "Diagnóstico eletrônico",
+    "categoria": "Motor e injeção",
+    "condicoes": [
+      "luz_injecao",
+      "marcha_lenta_irregular"
+    ],
+    "conclusao": "diagnostico_eletronico",
+    "tipo": "diagnostico",
+    "confianca": 0.84,
+    "urgencia": "Média",
+    "recomendacao": "Conectar scanner e avaliar códigos.",
+    "explicacao": "Luz de injeção com marcha lenta irregular justifica leitura eletrônica."
+  },
+  {
+    "id": "R31",
+    "nome": "Suspeita de falha do motor",
+    "categoria": "Motor e injeção",
+    "condicoes": [
+      "falha_motor",
+      "perda_potencia"
+    ],
+    "conclusao": "suspeita_falha_motor",
+    "tipo": "intermediaria",
+    "confianca": 0.8,
+    "urgencia": "Média",
+    "recomendacao": "",
+    "explicacao": "Falha e perda de potência formam evidência intermediária."
+  },
+  {
+    "id": "R32",
+    "nome": "Escalonamento para falha de injeção",
+    "categoria": "Motor e injeção",
+    "condicoes": [
+      "suspeita_falha_motor",
+      "luz_injecao"
+    ],
+    "conclusao": "falha_injecao",
+    "tipo": "diagnostico",
+    "confianca": 0.9,
+    "urgencia": "Alta",
+    "recomendacao": "Realizar diagnóstico eletrônico.",
+    "explicacao": "A evidência intermediária com luz de injeção fortalece a hipótese."
+  },
+  {
+    "id": "R33",
+    "nome": "Manutenção preventiva",
+    "categoria": "Óleo e manutenção",
+    "condicoes": [
+      "revisao_atrasada"
+    ],
+    "conclusao": "manutencao_preventiva",
+    "tipo": "diagnostico",
+    "confianca": 0.78,
+    "urgencia": "Baixa",
+    "recomendacao": "Agendar revisão preventiva.",
+    "explicacao": "Revisão atrasada justifica manutenção preventiva."
+  },
+  {
+    "id": "R34",
+    "nome": "Assistência da direção",
+    "categoria": "Suspensão, pneus e direção",
+    "condicoes": [
+      "direcao_pesada"
+    ],
+    "conclusao": "assistencia_direcao",
+    "tipo": "diagnostico",
+    "confianca": 0.81,
+    "urgencia": "Alta",
+    "recomendacao": "Verificar assistência da direção.",
+    "explicacao": "Direção pesada pode estar ligada ao sistema de assistência."
+  },
+  {
+    "id": "R35",
+    "nome": "Falha de partida",
+    "categoria": "Partida e bateria",
+    "condicoes": [
+      "nao_liga",
+      "dificuldade_partida"
+    ],
+    "conclusao": "falha_partida",
+    "tipo": "diagnostico",
+    "confianca": 0.79,
+    "urgencia": "Média",
+    "recomendacao": "Avaliar bateria, partida, ignição e combustível.",
+    "explicacao": "Falha de partida com dificuldade exige investigação."
+  },
+  {
+    "id": "R36",
+    "nome": "Sem evidência suficiente",
+    "categoria": "Geral",
+    "condicoes": [],
+    "conclusao": "inconclusivo",
+    "tipo": "fallback",
+    "confianca": 0.0,
+    "urgencia": "Indeterminada",
+    "recomendacao": "Registrar mais sintomas ou encaminhar para avaliação.",
+    "explicacao": "Nenhuma regra específica foi satisfeita."
+  }
+]

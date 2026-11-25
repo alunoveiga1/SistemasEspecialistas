@@ -1,0 +1,187 @@
+[
+  {
+    "id": "nao_liga",
+    "categoria": "Partida e bateria",
+    "texto": "O veículo não liga?"
+  },
+  {
+    "id": "motor_nao_gira",
+    "categoria": "Partida e bateria",
+    "texto": "Ao tentar ligar, o motor não gira?"
+  },
+  {
+    "id": "clique_partida",
+    "categoria": "Partida e bateria",
+    "texto": "Ao tentar ligar, você ouve apenas um clique?"
+  },
+  {
+    "id": "farol_fraco",
+    "categoria": "Partida e bateria",
+    "texto": "Os faróis ficam fracos ao tentar dar partida?"
+  },
+  {
+    "id": "bateria_fraca",
+    "categoria": "Partida e bateria",
+    "texto": "A bateria aparenta estar fraca ou descarregada?"
+  },
+  {
+    "id": "luz_bateria",
+    "categoria": "Partida e bateria",
+    "texto": "A luz da bateria permanece acesa no painel?"
+  },
+  {
+    "id": "correia_alternador",
+    "categoria": "Partida e bateria",
+    "texto": "Há suspeita de correia do alternador frouxa ou rompida?"
+  },
+  {
+    "id": "perda_potencia",
+    "categoria": "Motor e injeção",
+    "texto": "O veículo perdeu potência?"
+  },
+  {
+    "id": "falha_motor",
+    "categoria": "Motor e injeção",
+    "texto": "O motor apresenta falhas ou engasgos?"
+  },
+  {
+    "id": "luz_injecao",
+    "categoria": "Motor e injeção",
+    "texto": "A luz de injeção está acesa?"
+  },
+  {
+    "id": "consumo_alto",
+    "categoria": "Motor e injeção",
+    "texto": "O consumo de combustível aumentou?"
+  },
+  {
+    "id": "fumaca_preta",
+    "categoria": "Motor e injeção",
+    "texto": "Há fumaça preta no escapamento?"
+  },
+  {
+    "id": "fumaca_azul",
+    "categoria": "Motor e injeção",
+    "texto": "Há fumaça azul no escapamento?"
+  },
+  {
+    "id": "dificuldade_partida",
+    "categoria": "Motor e injeção",
+    "texto": "O motor demora para pegar?"
+  },
+  {
+    "id": "marcha_lenta_irregular",
+    "categoria": "Motor e injeção",
+    "texto": "A marcha lenta está irregular?"
+  },
+  {
+    "id": "temperatura_alta",
+    "categoria": "Arrefecimento",
+    "texto": "A temperatura está acima do normal?"
+  },
+  {
+    "id": "superaquecimento",
+    "categoria": "Arrefecimento",
+    "texto": "Houve superaquecimento?"
+  },
+  {
+    "id": "vazamento_liquido",
+    "categoria": "Arrefecimento",
+    "texto": "Há vazamento de líquido de arrefecimento?"
+  },
+  {
+    "id": "ventoinha_nao_aciona",
+    "categoria": "Arrefecimento",
+    "texto": "A ventoinha não aciona?"
+  },
+  {
+    "id": "nivel_arrefecimento_baixo",
+    "categoria": "Arrefecimento",
+    "texto": "O nível do líquido de arrefecimento está baixo?"
+  },
+  {
+    "id": "freio_baixo",
+    "categoria": "Freios",
+    "texto": "O pedal do freio está baixo ou esponjoso?"
+  },
+  {
+    "id": "freio_ruido",
+    "categoria": "Freios",
+    "texto": "Os freios fazem ruído metálico?"
+  },
+  {
+    "id": "carro_puxa_freio",
+    "categoria": "Freios",
+    "texto": "O veículo puxa para um lado ao frear?"
+  },
+  {
+    "id": "vibracao_frenagem",
+    "categoria": "Freios",
+    "texto": "Há vibração ao frear?"
+  },
+  {
+    "id": "luz_freio",
+    "categoria": "Freios",
+    "texto": "A luz de advertência dos freios está acesa?"
+  },
+  {
+    "id": "carro_puxa_direcao",
+    "categoria": "Suspensão, pneus e direção",
+    "texto": "O veículo puxa para um lado mesmo sem frear?"
+  },
+  {
+    "id": "volante_torto",
+    "categoria": "Suspensão, pneus e direção",
+    "texto": "O volante fica torto em linha reta?"
+  },
+  {
+    "id": "pneu_desgaste_irregular",
+    "categoria": "Suspensão, pneus e direção",
+    "texto": "Os pneus têm desgaste irregular?"
+  },
+  {
+    "id": "vibracao_velocidade",
+    "categoria": "Suspensão, pneus e direção",
+    "texto": "O veículo vibra em determinadas velocidades?"
+  },
+  {
+    "id": "batida_suspensao",
+    "categoria": "Suspensão, pneus e direção",
+    "texto": "Há batidas na suspensão?"
+  },
+  {
+    "id": "direcao_pesada",
+    "categoria": "Suspensão, pneus e direção",
+    "texto": "A direção ficou pesada?"
+  },
+  {
+    "id": "nivel_oleo_baixo",
+    "categoria": "Óleo e manutenção",
+    "texto": "O nível de óleo está baixo?"
+  },
+  {
+    "id": "luz_oleo",
+    "categoria": "Óleo e manutenção",
+    "texto": "A luz de óleo está acesa?"
+  },
+  {
+    "id": "vazamento_oleo",
+    "categoria": "Óleo e manutenção",
+    "texto": "Há vazamento de óleo?"
+  },
+  {
+    "id": "cheiro_combustivel",
+    "categoria": "Óleo e manutenção",
+    "texto": "Há cheiro forte de combustível?"
+  },
+  {
+    "id": "revisao_atrasada",
+    "categoria": "Óleo e manutenção",
+    "texto": "A revisão está atrasada?"
+  },
+  {
+    "id": "ar_condicionado_fraco",
+    "categoria": "Conforto",
+    "texto": "O ar-condicionado não resfria adequadamente?"
+  }
+]
